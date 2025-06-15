@@ -20,16 +20,14 @@ The project uses Flask , Sqlalchemy among other services enjoyyyy......
 
 ## Folder Structure 
 superheroes-api/
-├── app.py
-├── models.py
-├── config.py
-├── seed.py
 ├── server/
-│   ├── __init__.py
-│   ├── routes.py
-│   └── models.py
-├── migrations/
-├── requirements.txt
+│   ├── app.py
+│   ├── models.py
+│   └── seed.py
+│   └── migrations/
+│   └── instance
+├── Pipfile
+├── Pipfile.lock
 └── README.md
 
 
