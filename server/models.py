@@ -5,6 +5,11 @@ from sqlalchemy_serializer import SerializerMixin
 metadata = MetaData()
 db = SQLAlchemy(metadata=metadata)
 
+
+###ADDED SERIALIZE RULES to my classes cause I was getting 
+##Recursion errors due to an issue with my serializermixin
+
+
 class Hero(db.Model, SerializerMixin):
     __tablename__ = 'heroes'
 
@@ -12,7 +17,7 @@ class Hero(db.Model, SerializerMixin):
     name = db.Column(db.String)
     super_name = db.Column(db.String)
 
-    hero_powers = db.relationship('HeroPower', back_populates='hero', cascade="all, delete-orphan")
+    hero_powers = db.relationship('HeroPower', back_populates='hero', cascade="all, delete")
 
     serialize_rules = ('-hero_powers.hero',)
 
@@ -23,7 +28,7 @@ class Power(db.Model, SerializerMixin):
     name = db.Column(db.String)
     description = db.Column(db.String)
 
-    hero_powers = db.relationship('HeroPower', back_populates='power', cascade="all, delete-orphan")
+    hero_powers = db.relationship('HeroPower', back_populates='power', cascade="all, delete")
 
     serialize_rules = ('-hero_powers.power',)
 
