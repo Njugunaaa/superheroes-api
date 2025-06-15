@@ -1,7 +1,8 @@
 ## Superheroes API
 Author Gichuhi Joshua Njuguna Phase 3 - Moringa School 
 ****Flask PRoject****
-
+Incase of any ISsues  contact 
+joshuangich2@gmail.com
 ## Description
 Superheroes API is a flask based app that manages superheroes and their respective powers and you can be able to acces the secific endpoints individually on their own
 
