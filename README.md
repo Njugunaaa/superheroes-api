@@ -1,6 +1,6 @@
 ## Superheroes API
 Author Gichuhi Joshua Njuguna Phase 3 - Moringa School 
-****Flask PRoject****
+***Flask PRoject***
 Incase of any ISsues  contact 
 joshuangich2@gmail.com
 ## Description
