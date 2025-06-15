@@ -36,7 +36,7 @@ superheroes-api/
 yaml Copy Edit
 
 ## Technologies Used
-Python 3.8+
+Python 3.8.13
 
 Flask
 
